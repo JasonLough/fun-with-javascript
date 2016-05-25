@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sigmoid function and its graph</title>
+	<style>
+		body { font: 12px Arial;}
+
+		path { 
+		    stroke: steelblue;
+		    stroke-width: 2;
+		    fill: none;
+		}
+
+		.axis path,
+		.axis line {
+		    fill: none;
+		    stroke: grey;
+		    stroke-width: 1;
+		    shape-rendering: crispEdges;
+		}
+
+	</style>
+</head>
+<body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+<script>
+
+	/*
+		sigmoid function. http://mathworld.wolfram.com/SigmoidFunction.html
+	*/
+	function sig(z) {
+		return 1 / ( 1 + ( Math.pow( Math.E, -z ) ) );
+	}
+	
+	//creating the array [n, n+1, n+2...]
+	var min = -50;
+	var max = 100;
+	var arr = [];
+	for(var k = min; k <= max; k++) {
+		arr.push(k);
+	}
+
+	//using the array to produce [{input:n, output:n}, ...]
+	var data = arr.map(function(e, i) {
+		return { 'input': e, 'sigma': sig(e)};
+	});
+
+	//console.log(data);
+
+	//this part mostly taken off http://bl.ocks.org/d3noob/b3ff6ae1c120eea654b5
+	//modified it to take the array from above instead of a tsv file
+	var margin = {top: 30, right: 20, bottom: 30, left: 50},
+	    width = 600 - margin.left - margin.right,
+	    height = 270 - margin.top - margin.bottom;
+
+	// Parse the date / time
+	//var parseDate = d3.time.format("%d-%b-%y").parse;
+
+	// Set the ranges
+	var x = d3.scale.linear().range([0, width]);
+	var y = d3.scale.linear().range([height, 0]);
+
+	//s.map(function(e) { return e.input; }) //or e.sigma for y
+
+	// Define the axes
+	var xAxis = d3.svg.axis().scale(x)
+	    .orient("bottom").ticks(5);
+
+	var yAxis = d3.svg.axis().scale(y)
+	    .orient("left").ticks(5);
+
+	// Define the line
+	var valueline = d3.svg.line()
+	    .x(function(d) { return x(d.input); })
+	    .y(function(d) { return y(d.sigma); });
+	    
+	// Adds the svg canvas
+	var svg = d3.select("body")
+	    .append("svg")
+	        .attr("width", width + margin.left + margin.right)
+	        .attr("height", height + margin.top + margin.bottom)
+	    .append("g")
+	        .attr("transform", 
+	              "translate(" + margin.left + "," + margin.top + ")");
+
+    // Scale the range of the data
+    x.domain(d3.extent(data, function(d) { return d.input; }));
+    y.domain([0, d3.max(data, function(d) { return d.sigma; })]);
+
+    // Add the valueline path.
+    svg.append("path")
+        .attr("class", "line")
+        .attr("d", valueline(data));
+
+    // Add the X Axis
+    svg.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(xAxis);
+
+    // Add the Y Axis
+    svg.append("g")
+        .attr("class", "y axis")
+        .call(yAxis);
+
+</script>
+
+
+	
+</body>
+</html>
