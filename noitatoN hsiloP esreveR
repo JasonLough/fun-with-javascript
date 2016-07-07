@@ -24,7 +24,7 @@
 			$input = $_POST['rpe']; //reverse polish equation
 
 			$input = explode(" ", $input); //brainfarted here. keeping original for posterity.
-			$input = $input.explode(" "); // its like js married php and had lisp
+			//$input = $input.explode(" "); // its like js married php and had lisp
 			
 			foreach($input as $op) {
 
