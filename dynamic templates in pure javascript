@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>weird</title>
+    <style media="screen">
+      #container, .container2 {
+        border:1px solid #333;
+        padding:10px;
+        margin:10px;
+      }
+    </style>
+  </head>
+  <body>
+
+<div id="container"></div>
+<div class="container2"></div>
+<div class="container2"></div>
+
+<script type="text/template" data-template="whatever">
+  <div>test1 {{n}}</div>
+  <div>  test2 {{ n }}</div>
+  <div>test3 {{  n }}  </div>
+</script>
+
+<script type="text/template" data-template="complicated">
+  <div>test1 {{a}}</div>
+  <div>  test2 {{ b }}</div>
+  <div id="inner">test3  </div>
+  <div>test3 {{ c }}  </div>
+  <div>test3 {{ b }}  </div>
+  <div>test3 {{ a }}  </div>
+</script>
+
+<script type="text/javascript">
+  c = console.log
+
+  /*
+  template : which script holds the markup
+  container : which element gets the results
+  targetVal.target: the {{ x }} to replace
+  targetVal.val: the value to replace {{ x }}
+  */
+  function foo(template, selector, targetVal) {
+      let markup = document
+        .querySelector(`script[data-template="${template}"]`)
+        .innerHTML
+        .trim()
+
+      targetVal.forEach( e => {
+        let reg = new RegExp(`{{\\s*${e.target}\\s*}}`, 'g')
+        markup = markup.replace(reg, e.val)
+      })
+
+      document
+        .querySelectorAll(selector)
+        .forEach( e => e.innerHTML += markup)
+  }
+
+  //put the 'whatever' template into the #container element, replacing {{n}} with 'krista'
+  foo("whatever", "#container", [ {target:"n", val:"krista"} ])
+
+  complex = [
+    {target:"a", val:"A"},
+    {target:"b", val:"B"},
+    {target:"c", val:"C"},
+    {target:"d", val:"D"}
+  ]
+  //put the 'complicated' template into all the .container2 elements, replacing several {{k}} v pairs
+  foo("complicated", ".container2", complex)
+
+  //modify a child of an already modified element
+  foo("whatever", "#inner", [{target:"n", val:"lolasaurous"}])
+
+
+</script>
+  </body>
+</html>
