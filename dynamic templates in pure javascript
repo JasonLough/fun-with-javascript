@@ -37,7 +37,7 @@
 
   /*
   template : which script holds the markup
-  container : which element gets the results
+  selector : which element gets the results
   targetVal.target: the {{ x }} to replace
   targetVal.val: the value to replace {{ x }}
   */
