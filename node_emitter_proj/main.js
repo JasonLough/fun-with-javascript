@@ -21,5 +21,5 @@ eventSubscriber
   .emit('omg')
 
 /************
-  Now go look at /node_modules/start.js
+  Now go look at /node_modules/eventSubscriber/start.js
 ************/
