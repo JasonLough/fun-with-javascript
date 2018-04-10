@@ -1,8 +1,8 @@
-/*
-  This is the starting point for this experiment.
-*/
-
 'use strict'
+
+/************
+  This is the entry point for this experiment.
+************/
 
 const eventSubscriber = require('eventSubscriber').eventSubscriber,
       c = console.log
@@ -19,3 +19,7 @@ eventSubscriber
   .emit('feelTugOnLine')
   .emit('reelIn')
   .emit('omg')
+
+/************
+  Now go look at /node_modules/start.js
+************/
