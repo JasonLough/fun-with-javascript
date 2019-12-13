@@ -8,7 +8,7 @@ This is a collection of things I found interesting with JavaScript. I wrote each
 
 I use [VSCode](https://code.visualstudio.com/), with a terminal open, running node automatically on save. This allows me to quickly write -> evaluate -> repeat.
 
-[learnflow]: https://github.com/JasonLough/fun-with-javascript/screenshot.png "My workflow while learning. My learnflow. :-)"
+[learnflow]: https://github.com/JasonLough/fun-with-javascript/blob/master/screenshot.png?raw=true "My workflow while learning. My learnflow. :-)"
 
 ---
 
@@ -38,3 +38,4 @@ dynamic-templates-in-pure-javascript.htm -
 
 ### My favorite youtube videos on JavaScript
 
+[Learn the Event Loop](https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=4s)
