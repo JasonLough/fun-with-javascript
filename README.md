@@ -1,6 +1,6 @@
 ### If youre into javascript, you just found a treasure room
 
-This is a collection of things I found interesting with JavaScript. I wrote each of these to be (hopefully) easy to understand while showing a specific aspect (often a weird one) of JavaScript.
+This is a collection of things I found interesting with JavaScript. I wrote each of these to be (hopefully) easy to understand while showing a specific aspect (often a weird one) of JavaScript. More added as I find time!
 
 ---
 
@@ -28,15 +28,21 @@ Keep a developer log for yourself. A google sheet works nicely. Make it similar 
 
 ---
 
-### Glossary of scripts 
+### Glossary of /scripts 
 
-memoization.js - 
+dynamic-templates-in-pure-javascript.htm - 
+
+ES6-underscore-D3JS - 
+
+memoization.js -
+
+noitatoN-hsiloP-esreveR.htm - 
 
 rock-paper-ES6.js - 
 
-sigmoid.js - 
+sigmoid.htm - 
 
-dynamic-templates-in-pure-javascript.htm - 
+test-object.js -
 
 ---
 
