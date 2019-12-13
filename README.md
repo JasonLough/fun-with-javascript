@@ -30,19 +30,21 @@ Keep a developer log for yourself. A google sheet works nicely. Make it similar 
 
 ### Glossary of /scripts 
 
-dynamic-templates-in-pure-javascript.htm - 
+note: (OLD) = stuff I wrote > 3 yrs ago
 
-ES6-underscore-D3JS - 
+dynamic-templates-in-pure-javascript.htm - (OLD) using script type="text/template" you can write functions to make your own template. No libraries required.
 
-memoization.js -
+ES6-underscore-D3JS - (OLD) makes a bar graph of random numbers, sorts them, charts them, assigns color based on above or below average
 
-noitatoN-hsiloP-esreveR.htm - 
+memoization.js - (OLD) caching function results in a lookup table
 
-rock-paper-ES6.js - 
+noitatoN-hsiloP-esreveR.php - (OLD) Reverse Polish Notation, aka "How a calculator could work". Did this one for an interview test a long time ago, I should remake it in JS.
 
-sigmoid.htm - 
+rock-paper-ES6.js - (OLD) stupid simple rock paper scissor simulator with custom test function
 
-test-object.js -
+sigmoid.htm - (OLD) visualize a sigmoid function with D3.js
+
+test-object.js - (OLD) makes an array with a random number of fruit elements in it
 
 ---
 
