@@ -6,7 +6,7 @@ This is a collection of things I found interesting with JavaScript. I wrote each
 
 ### My setup
 
-I use [VSCode](https://code.visualstudio.com/), with a terminal open, running node automatically on save.
+I use [VSCode](https://code.visualstudio.com/), with a terminal open, using nodemon to automatically run on save.
 
 ```npx nodemon myscript.js```
 
