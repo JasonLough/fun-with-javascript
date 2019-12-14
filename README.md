@@ -32,11 +32,15 @@ Keep a developer log for yourself. A google sheet works nicely. Make it similar 
 
 note: (OLD) = stuff I wrote > 3 yrs ago
 
+* array-intersection.js - get the intersection of 2 arrays, then performance test the function with huge arrays
+
 * curry.js - if a()()() scares you, go here
 
 * dynamic-templates-in-pure-javascript.htm - (OLD) using script type="text/template" you can write functions to make your own template. No libraries required.
 
 * ES6-underscore-D3JS - (OLD) makes a bar graph of random numbers, sorts them, charts them, assigns color based on above or below average
+
+* filterNsortNuniq.js - array prototype function that filters, then sorts, then returns matches/misses between 2 arrays
 
 * getters-setters.js - fun with getters and setters
 
