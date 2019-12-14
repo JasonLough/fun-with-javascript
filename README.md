@@ -56,4 +56,8 @@ note: (OLD) = stuff I wrote > 3 yrs ago
 
 ### My favorite youtube videos on JavaScript
 
-[Learn the Event Loop](https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=4s)
+[Learn the Event Loop, watch this one if you watch no others](https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=4s)
+
+[Fun Fun Function, amazing lessons](https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q)
+
+[Wes Bos, more amazing tutorials](https://www.youtube.com/channel/UCoebwHSTvwalADTJhps0emA)
