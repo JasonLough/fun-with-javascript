@@ -28,7 +28,7 @@ Keep a developer log for yourself. A google sheet works nicely. Make it similar 
 
 ---
 
-### Glossary of /scripts 
+### Index of /scripts 
 
 note: (OLD) = stuff I wrote > 3 yrs ago
 
