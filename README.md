@@ -32,19 +32,25 @@ Keep a developer log for yourself. A google sheet works nicely. Make it similar 
 
 note: (OLD) = stuff I wrote > 3 yrs ago
 
-dynamic-templates-in-pure-javascript.htm - (OLD) using script type="text/template" you can write functions to make your own template. No libraries required.
+* curry.js - if a()()() scares you, go here
 
-ES6-underscore-D3JS - (OLD) makes a bar graph of random numbers, sorts them, charts them, assigns color based on above or below average
+* dynamic-templates-in-pure-javascript.htm - (OLD) using script type="text/template" you can write functions to make your own template. No libraries required.
 
-memoization.js - (OLD) caching function results in a lookup table
+* ES6-underscore-D3JS - (OLD) makes a bar graph of random numbers, sorts them, charts them, assigns color based on above or below average
 
-noitatoN-hsiloP-esreveR.php - (OLD) Reverse Polish Notation, aka "How a calculator could work". Did this one for an interview test a long time ago, I should remake it in JS.
+* getters-setters.js - fun with getters and setters
 
-rock-paper-ES6.js - (OLD) stupid simple rock paper scissor simulator with custom test function
+* memoization.js - (OLD) caching function results in a lookup table
 
-sigmoid.htm - (OLD) visualize a sigmoid function with D3.js
+* noitatoN-hsiloP-esreveR.php - (OLD) Reverse Polish Notation, aka "How a calculator could work". Did this one for an interview test a long time ago, I should remake it in JS.
 
-test-object.js - (OLD) makes an array with a random number of fruit elements in it
+* rock-paper-ES6.js - (OLD) stupid simple rock paper scissor simulator with custom test function
+
+* sigmoid.htm - (OLD) visualize a sigmoid function with D3.js
+
+* simple-pub-sub-event-handler.js - collect events in an array, trigger them on event
+
+* test-object.js - (OLD) makes an array with a random number of fruit elements in it
 
 ---
 
