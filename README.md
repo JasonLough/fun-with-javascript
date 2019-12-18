@@ -8,7 +8,7 @@ This is a collection of things I found interesting with JavaScript. I wrote each
 
 I use [VSCode](https://code.visualstudio.com/), with a terminal open, using nodemon to automatically run on save.
 
-```npx nodemon myscript.js```
+`npx nodemon myscript.js`
 
 This allows me to quickly write -> evaluate -> repeat.
 
@@ -18,43 +18,44 @@ This allows me to quickly write -> evaluate -> repeat.
 
 ### My biggest piece of advice
 
-Keep a developer log for yourself. A google sheet works nicely. Make it similar to this: 
+Keep a developer log for yourself. A google sheet works nicely. Make it similar to this:
 
-| Date           | Topic                        | Notes                                                               |
-| -------------- |:----------------------------:| -------------------------------------------------------------------:|
-| 11/7/2019      | curry functions              | weird technique that abuses closures to make customizable functions |
-| 11/8/2019      | recursion with currying      |   still wrapping my head around how this can be useful              |
-
+| Date      |          Topic          |                                                               Notes |
+| --------- | :---------------------: | ------------------------------------------------------------------: |
+| 11/7/2019 |     curry functions     | weird technique that abuses closures to make customizable functions |
+| 11/8/2019 | recursion with currying |                still wrapping my head around how this can be useful |
 
 ---
 
-### Index of /scripts 
+### Index of /scripts
 
 note: (OLD) = stuff I wrote > 3 yrs ago
 
-* array-intersection.js - get the intersection of 2 arrays, then performance test the function with huge arrays
+- array-intersection.js - get the intersection of 2 arrays, then performance test the function with huge arrays
 
-* curry.js - if a()()() scares you, go here
+- curry.js - if a()()() scares you, go here
 
-* dynamic-templates-in-pure-javascript.htm - (OLD) using script type="text/template" you can write functions to make your own template. No libraries required.
+- dynamic-templates-in-pure-javascript.htm - (OLD) using script type="text/template" you can write functions to make your own template. No libraries required.
 
-* ES6-underscore-D3JS - (OLD) makes a bar graph of random numbers, sorts them, charts them, assigns color based on above or below average
+- ES6-underscore-D3JS - (OLD) makes a bar graph of random numbers, sorts them, charts them, assigns color based on above or below average
 
-* filterNsortNuniq.js - array prototype function that filters, then sorts, then returns matches/misses between 2 arrays
+- filterNsortNuniq.js - array prototype function that filters, then sorts, then returns matches/misses between 2 arrays
 
-* getters-setters.js - fun with getters and setters
+- getters-setters.js - fun with getters and setters
 
-* memoization.js - (OLD) caching function results in a lookup table
+- memoization.js - (OLD) caching function results in a lookup table
 
-* noitatoN-hsiloP-esreveR.php - (OLD) Reverse Polish Notation, aka "How a calculator could work". Did this one for an interview test a long time ago, I should remake it in JS.
+- noitatoN-hsiloP-esreveR.php - (OLD) Reverse Polish Notation, aka "How a calculator could work". Did this one for an interview test a long time ago, I should remake it in JS.
 
-* rock-paper-ES6.js - (OLD) stupid simple rock paper scissor simulator with custom test function
+- rock-paper-ES6.js - (OLD) stupid simple rock paper scissor simulator with custom test function
 
-* sigmoid.htm - (OLD) visualize a sigmoid function with D3.js
+- sigmoid.htm - (OLD) visualize a sigmoid function with D3.js
 
-* simple-pub-sub-event-handler.js - collect events in an array, trigger them on event
+- simple-pub-sub-event-handler.js - collect events in an array, trigger them on event
 
-* test-object.js - (OLD) makes an array with a random number of fruit elements in it
+- StringSubSlice.js - take a string and a chunk size, return an array of chunks of that size from that string. String.prototype.subSlice().
+
+- test-object.js - (OLD) makes an array with a random number of fruit elements in it
 
 ---
 
