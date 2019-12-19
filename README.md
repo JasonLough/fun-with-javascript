@@ -45,7 +45,11 @@ note: (OLD) = stuff I wrote > 3 yrs ago
 
 - memoization.js - (OLD) caching function results in a lookup table
 
+- mocker.js - create random objects with random elements for testing / learning purposes.
+
 - noitatoN-hsiloP-esreveR.php - (OLD) Reverse Polish Notation, aka "How a calculator could work". Did this one for an interview test a long time ago, I should remake it in JS.
+
+- react-widget.jsx - Showcasing a lot of react features in one component. Video to follow along with in comments.
 
 - rock-paper-ES6.js - (OLD) stupid simple rock paper scissor simulator with custom test function
 
