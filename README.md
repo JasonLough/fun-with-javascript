@@ -1,6 +1,6 @@
 ### If youre into javascript, you just found a treasure room
 
-This is a collection of things I found interesting with JavaScript. I wrote each of these to be (hopefully) easy to understand while showing a specific aspect (often a weird one) of JavaScript. More added as I find time!
+This is a collection of things I've written because I thought they conveyed something interesting about JavaScript. I wrote each of these to be (hopefully) easy to understand while showing a specific aspect (often a weird one) of JavaScript.
 
 ---
 
